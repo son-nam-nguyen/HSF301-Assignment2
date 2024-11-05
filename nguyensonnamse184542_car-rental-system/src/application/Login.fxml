@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+   <children>
+      <AnchorPane layoutX="-8.0" layoutY="-10.0" prefHeight="450.0" prefWidth="450.0" style="-fx-background-color: #FFCC33;"> <!-- Changed background color -->
+         <children>
+            <Label layoutX="122.0" layoutY="41.0" text="Login Form">
+               <font>
+                  <Font name="Arial" size="24.0" /> <!-- Increased font size -->
+               </font>
+            </Label>
+            <Label layoutX="36.0" layoutY="107.0" text="Email:">
+               <font>
+                  <Font size="20.0" /> <!-- Increased font size -->
+               </font>
+            </Label>
+            <Label layoutX="34.0" layoutY="148.0" text="Password:">
+               <font>
+                  <Font size="20.0" /> <!-- Increased font size -->
+               </font>
+            </Label>
+            <TextField fx:id="txtEmail" layoutX="145.0" layoutY="108.0" prefHeight="30.0" prefWidth="184.0" style="-fx-font-size: 16px;"/> <!-- Increased height and font size -->
+            <PasswordField fx:id="txtPassword" layoutX="145.0" layoutY="149.0" prefHeight="30.0" prefWidth="184.0" style="-fx-font-size: 16px;"/> <!-- Increased height and font size -->
+            <Button fx:id="login" layoutX="54.0" layoutY="225.0" mnemonicParsing="false" onAction="#loginOnAction" prefHeight="50.0" prefWidth="120.0" style="-fx-background-color: #FFFFFF; -fx-font-size: 16px;" text="Login" /> <!-- Increased button size and font -->
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

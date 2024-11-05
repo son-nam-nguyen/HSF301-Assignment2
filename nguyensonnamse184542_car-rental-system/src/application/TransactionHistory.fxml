@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextField?> <!-- Corrected import -->
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/22">
+   <children>
+      <AnchorPane layoutX="-7.0" prefHeight="410.0" prefWidth="591.0" style="-fx-background-color: #33FFCC;">
+         <children>
+            <Label layoutX="192.0" layoutY="35.0" text="Transaction History">
+               <font>
+                  <Font name="Arial" size="24.0" />
+               </font>
+            </Label>
+            <TableView layoutX="29.0" layoutY="153.0" prefHeight="226.0" prefWidth="542.0">
+              <columns>
+                <TableColumn fx:id="colCarName" prefWidth="87.99996566772461" text="Car Name" />
+                <TableColumn fx:id="colPickupDate" prefWidth="99.2000732421875" text="Pickup Date" />
+                  <TableColumn fx:id="colReturnDate" prefWidth="103.20008850097656" text="Return Date" />
+                  <TableColumn fx:id="colRentPrice" prefWidth="95.199951171875" text="Rent Price" />
+                  <TableColumn fx:id="colStatus" prefWidth="152.800048828125" text="Status" />
+              </columns>
+            </TableView>
+            <Label layoutX="45.0" layoutY="94.0" text="Car Name: ">
+               <font>
+                  <Font name="Arial" size="19.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtCarName" layoutX="163.0" layoutY="92.0" prefHeight="26.0" prefWidth="234.0" />
+            <Button fx:id="btnSearch" layoutX="439.0" layoutY="93.0" mnemonicParsing="false" onAction="#searchOnAction" prefHeight="27.0" prefWidth="98.0" style="-fx-background-color: white;" text="Search" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UserProfileController">
+   <children>
+      <AnchorPane layoutX="0" layoutY="0" prefHeight="491.0" prefWidth="480.0" style="-fx-background-color: #33FFCC;">
+         <children>
+            <Label layoutX="140.0" layoutY="20.0" text="Customer Profile" style="-fx-font-size: 30px; -fx-font-weight: bold; -fx-text-fill: #2C3E50;">
+               <font>
+                  <Font name="Arial" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="35.0" layoutY="80.0" text="Name:" style="-fx-font-size: 18px; -fx-text-fill: #333333;" />
+            <Label layoutX="35.0" layoutY="120.0" text="Mobile:" style="-fx-font-size: 18px; -fx-text-fill: #333333;" />
+            <Label layoutX="35.0" layoutY="160.0" text="Email:" style="-fx-font-size: 18px; -fx-text-fill: #333333;" />
+            <Label layoutX="35.0" layoutY="200.0" text="Date of Birth:" style="-fx-font-size: 18px; -fx-text-fill: #333333;" />
+            <Label layoutX="35.0" layoutY="240.0" text="Identity Card:" style="-fx-font-size: 18px; -fx-text-fill: #333333;" />
+            <Label layoutX="35.0" layoutY="280.0" text="License Date:" style="-fx-font-size: 18px; -fx-text-fill: #333333;" />
+            <Label layoutX="35.0" layoutY="320.0" text="License Number:" style="-fx-font-size: 18px; -fx-text-fill: #333333;" />
+            
+            <TextField fx:id="txtCustomerName" layoutX="193.0" layoutY="75.0" prefHeight="30.0" prefWidth="263.0" promptText="Enter your name" />
+            <TextField fx:id="txtMobile" layoutX="193.0" layoutY="115.0" prefHeight="30.0" prefWidth="263.0" promptText="Enter your mobile number" />
+            <TextField fx:id="txtEmail" layoutX="193.0" layoutY="155.0" prefHeight="30.0" prefWidth="263.0" promptText="Enter your email" />
+            <DatePicker fx:id="dpDateOfBirth" layoutX="193.0" layoutY="195.0" prefHeight="30.0" prefWidth="263.0" />
+            <TextField fx:id="txtIdentityCard" layoutX="193.0" layoutY="235.0" prefHeight="30.0" promptText="Enter ID card number" />
+            <DatePicker fx:id="dpLicenceDate" layoutX="193.0" layoutY="275.0" prefHeight="30.0" prefWidth="263.0" />
+            <TextField fx:id="txtLicenceNumber" layoutX="193.0" layoutY="315.0" prefHeight="30.0" promptText="Enter license number" />
+            
+            <Button fx:id="btnUpdate" layoutX="73.0" layoutY="360.0" mnemonicParsing="false" onAction="#updateOnAction" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: white; -fx-font-size: 18px; -fx-text-fill: #2C3E50;" text="Update Profile" />
+            <Button fx:id="btnCancel" layoutX="295.0" layoutY="360.0" mnemonicParsing="false" onAction="#cancelOnAction" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: #FF7F7F; -fx-font-size: 18px; -fx-text-fill: white;" text="Cancel" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextField?> <!-- Corrected import -->
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CarManagementController">
+   <children>
+      <AnchorPane prefHeight="662.0" prefWidth="724.0" style="-fx-background-color: #33FFCC;">
+         <children>
+            <Label layoutX="259.0" layoutY="102.0" prefHeight="23.0" prefWidth="205.0" text="Car Management">
+               <font>
+                  <Font name="Arial" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="45.0" layoutY="168.0" prefHeight="23.0" prefWidth="110.0" text="Car ID: ">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="45.0" layoutY="194.0" prefHeight="23.0" prefWidth="170.0" text="Car Name:">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="45.0" layoutY="218.0" prefHeight="23.0" prefWidth="169.0" text="Car Model Year:">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="45.0" layoutY="244.0" prefHeight="23.0" prefWidth="169.0" text="Color:">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="45.0" layoutY="268.0" prefHeight="23.0" prefWidth="169.0" text="Capacity:">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="46.0" layoutY="293.0" prefHeight="23.0" prefWidth="169.0" text="Rent Price:">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="46.0" layoutY="346.0" prefHeight="23.0" prefWidth="169.0" text="Status:">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font>
+            </Label>
+            <TableView fx:id="tblCarManagements" layoutX="11.0" layoutY="383.0" prefHeight="200.0" prefWidth="709.0">
+              <columns>
+                <TableColumn fx:id="colCarId" prefWidth="75.0" text="Car ID" />
+                <TableColumn fx:id="colCarName" prefWidth="88.800048828125" text="Car Name" />
+                  <TableColumn fx:id="colCarModelYear" prefWidth="105.59992980957031" text="Car Model Year" />
+                  <TableColumn fx:id="colColor" prefWidth="74.40008544921875" text="Color" />
+                  <TableColumn fx:id="colCapacity" prefWidth="96.00007629394531" text="Capacity" />
+                  <TableColumn fx:id="colRentPrice" prefWidth="96.00007629394531" text="Rent Price" />
+                  <TableColumn fx:id="colProduct" prefWidth="82.4000244140625" text="Product" />
+                  <TableColumn fx:id="colStatus" prefWidth="82.4000244140625" text="Status" />
+              </columns>
+            </TableView>
+            <Button fx:id="btnAdd" layoutX="38.0" layoutY="593.0" mnemonicParsing="false" onAction="#addOnAction" prefHeight="43.0" prefWidth="102.0" style="-fx-background-color: white;" text="Add" />
+            <Button fx:id="btnUpdate" layoutX="215.0" layoutY="593.0" mnemonicParsing="false" onAction="#updateOnAction" prefHeight="43.0" prefWidth="102.0" style="-fx-background-color: white;" text="Update" />
+            <Button fx:id="btnDelete" layoutX="378.0" layoutY="593.0" mnemonicParsing="false" onAction="#deleteOnAction" prefHeight="43.0" prefWidth="102.0" style="-fx-background-color: white;" text="Delete" />
+            <Button fx:id="btnCancel" layoutX="582.0" layoutY="593.0" mnemonicParsing="false" onAction="#cancelOnAction" prefHeight="43.0" prefWidth="102.0" style="-fx-background-color: white;" text="Cancel" />
+            <TextField fx:id="txtCarName" layoutX="243.0" layoutY="192.0" prefHeight="26.0" prefWidth="409.0" />
+            <TextField fx:id="txtCarModelYear" layoutX="243.0" layoutY="216.0" prefHeight="26.0" prefWidth="410.0" />
+            <TextField fx:id="txtColor" layoutX="243.0" layoutY="242.0" prefHeight="26.0" prefWidth="410.0" />
+            <TextField fx:id="txtCapacity" layoutX="243.0" layoutY="266.0" prefHeight="26.0" prefWidth="410.0" />
+            <TextField fx:id="txtRentPrice" layoutX="243.0" layoutY="292.0" prefHeight="26.0" prefWidth="410.0" />
+            <Label layoutX="46.0" layoutY="319.0" prefHeight="23.0" prefWidth="169.0" text="Product:">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="statusCombobox" layoutX="242.0" layoutY="345.0" prefHeight="23.0" prefWidth="410.0" />
+            <ComboBox fx:id="productCombobox" layoutX="242.0" layoutY="317.0" prefHeight="26.0" prefWidth="410.0" />
+            <TextField fx:id="txtCarId" layoutX="243.0" layoutY="167.0" prefHeight="26.0" prefWidth="410.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
